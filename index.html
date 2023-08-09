@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visit Åhus</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.svg" alt="Åhus">
+        <img src="images/logo.svg" alt="Åhus" id="home">
         <div class="banner">
             <p>Language here</p>
             <p>Social buttons here</p>
         </div>
         <hr>
         <nav>
-            <p>Home</p>
-            <p>About</p>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
             <p>Places</p>
             <p>Contact</p>
         </nav>
@@ -25,14 +26,41 @@
     <div class="slideshow">
         <h1>Visit Åhus</h1>
         <img src="images/ahus.jpg" alt="Image of Åhus" id="lake">
-        <img src="images/beach.JPG" alt="Beach of Åhus" id="beach">
-        <img src="images/houses.JPG" alt="Houses of Åhus" id="houses">
+        <img src="images/beach.jpg" alt="Beach of Åhus" id="beach">
+        <img src="images/harbor.jpg" alt="Harbor of Åhus" id="harbor">
     </div>
 
     <div class="content">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">
+            <h3>Alcohol!</h3>
+            <hr>
+            <i class="fa fa-glass"></i>
+            <p>With a whole big factory <br>for Absolut Vodka we got <br>your alcohol needs covered! <br>Try to drown your sorrows and <br>forget where you actually are.</p>
+        </div>
+        <div class="box">
+            <h3 id="about">Sandy Beaches!</h3>
+            <hr>
+            <i class="fa fa-ship"></i>
+            <p>Water, water everywhere. <br>And more water. <br>We got streams, harbors, beaches, and rain. <br>Lots and lots of rain. <br><br> ... <br><br> Sometimes it snows too.</p>
+        </div>
+        <div class="box">
+            <h3>History!</h3>
+            <hr>
+            <i class="fa fa-university"></i>
+            <p>We have this big old church you see... <br>and a big (presumably) <br>old ruins of a castle... <br>We also got a house with a chimney <br>where our king got stuck once... <br>Good times, yeah?</p>
+        </div>
+
+    </div>
+
+    <div class="pitch">
+        <div class="pitch-box">
+            <div class="pitch-text">
+                <h2>About</h2>
+                <p>The city of Åhus in Sweden is a historical and cultural destination that attracts many visitors every year. The city was founded in the 12th century and served as a major port and trading center until the 17th century. Today, the city is known for its well-preserved medieval architecture, its beautiful sandy beaches, and its production of Absolut vodka. The city also hosts several festivals and events, such as the Åhus Beach Soccer Festival, the Åhus Jazz Festival, and the Åhus Medieval Market. The city of Åhus is a place where history, nature, and culture blend together in a unique and charming way.</p>
+                <hr>
+            </div>
+            <img src="images/church1.jpg" alt="Church of Åhus">
+        </div>
     </div>
 
 </body>

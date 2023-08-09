@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body
+{
+    background-color: #F0EBEB;
+}
+
 header {
     display: flex;
     justify-content: flex-start;
@@ -50,14 +55,14 @@ nav {
 .slideshow {
     position: relative;
     overflow: hidden;
-    height: 800px;
+    height: 850px;
     width: 100%;
     border-radius: 0 0 20px 20px;
 }
 
 h1 {
     position: absolute;
-    color: #AB455B;
+    color: #CF884C;
     background: linear-gradient(to right, #323d52, rgba(50, 61, 82, 0));
     font-size: 38px;
     bottom: 0px;
@@ -84,7 +89,7 @@ h1 {
     position: absolute;
 }
 
-#houses {
+#harbor {
     z-index: -3;
     animation: fade 18s -12s infinite;
     position: absolute;
@@ -102,7 +107,8 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    background-color: #F0EFEF;
+    height: 450px;
+    background-color: #F0EBEB;
 }
 
 .box {
@@ -114,9 +120,68 @@ h1 {
     box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
     transition: 1s;
     z-index: 3;
+    text-align: center;
 }
 
 .box:hover {
     height: 450px;
     width: 350px;
+    opacity: 1;
+}
+
+.box h3 {
+    padding: 10px;
+    color: #AB455B;
+    background-color: #F0EBEB;
+    border-radius: 9px 9px 0 0;
+}
+
+.box i {
+    color: #323D52;
+    font-size: 100px;
+    margin:  50px auto;
+    transition: 2s;
+}
+
+.box p {
+    opacity: 0;
+    transition: 1s;
+    margin: 15px;
+}
+
+.box:hover p {
+    opacity: 1;
+}
+
+.box:hover i {
+    opacity: 1;
+    margin: 10px;
+}
+
+.pitch {
+    height: 500px;
+    background-color: #F0EBEB;
+}
+
+.pitch-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 9px;
+    background-color: white;
+    padding: 15px 15px 15px 30px;
+    margin: 0 auto;
+    gap: 15px;
+    width: 70%;
+    height: 400px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.pitch-text {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pitch-box img {
+    border-radius: 9px;
 }
