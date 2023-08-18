@@ -257,3 +257,40 @@ h2 {
     opacity: 1;
     bottom: 0px;
 }
+
+.contact {
+    background-color: #AB455B;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    width: 70%;
+    margin: 0 auto;
+    border: #883748 solid 2px;
+    padding: 15px;
+    vertical-align: middle;
+}
+
+input {
+    display: block;
+    margin: 2px auto 15px auto;
+}
+
+.checkboxes {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+input[type="checkbox"] {
+    display: inline;
+    width: 15px;
+    height: 15px;
+    vertical-align: top;
+}
