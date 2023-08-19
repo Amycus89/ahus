@@ -97,45 +97,81 @@
 
     <div class="contact">
         <h2 id="contact">Contact</h2>
-        <form action="/form-handling-url" method="post">
-            <fieldset>
-                <legend>Be first in the know!</legend>
+        <div class="contact-form">
+            <form action="/form-handling-url" method="post">
+                <fieldset>
+                    <legend>Be first in the know!</legend>
 
-                <div>
-                    <label for="firstName">First name</label>
-                    <input type="text" id="firstName" name="first_name">
-                </div>
-
-                <div>
-                    <label for="lastName">Last name</label>
-                    <input type="text" id="lastName" name="last_name">
-                </div>
-
-                <div>
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email_address">
-                </div>
-
-                <div class="checkboxes">
                     <div>
-                        <input type="checkbox" id="newsletter" name="newsletter">
-                        <label for="newsletter">Subscribe to newsletter</label>
+                        <label for="firstName">First name</label>
+                        <input type="text" id="firstName" name="first_name">
                     </div>
 
                     <div>
-                        <input type="checkbox" id="tos" name="tos">
-                        <label for="tos">Terms of Service</label>
+                        <label for="lastName">Last name</label>
+                        <input type="text" id="lastName" name="last_name">
                     </div>
-                </div>
 
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email_address">
+                    </div>
 
-            </fieldset>
-        </form>
+                    <div class="checkboxes">
+                        <div>
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to newsletter</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="tos" name="tos">
+                            <label for="tos">Terms of Service</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
     </div>
 
 </body>
-<footer></footer>
+<footer>
+    <div class="row1">
+        <div>
+            <h4>About</h4>
+            <p>Åhus is a medieval town in Sweden that offers a rich and diverse cultural and natural heritage. Visitors can explore the well-preserved Old Town, the beautiful church of St Mary, the ruins of the Aosehus castle, and the Åhus Museum. Åhus is also famous for its eel fishing, tobacco growing, and Absolut vodka production. The town has a lively harbour, long sandy beaches, and a visitors' marina. Åhus is an ideal destination for anyone who wants to experience the history, charm, and beauty of a Scandinavian town.</p>
+        </div>
+
+        <div class="subheadings">
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#places">Places</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>News</h4>
+                <p>Corona restrictions are finally over!</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row2">
+        <div>
+            <p>© 2023 Visit Åhus</p>
+        </div>
+
+        <div>
+            <p>Social media buttons here</p>
+        </div>
+    </div>
+</footer>
 </html>
