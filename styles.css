@@ -1,7 +1,3 @@
-/*
-TODO: Fix header layer bug
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -366,6 +362,23 @@ footer hr {
     color: #323D52;
     font-size: 48px;
     transition: 0.2s;
+}
+
+.fa:hover {
+    animation-name: bounce;
+    animation-duration: 0.5s;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2px);
+    }
+    100% {
+      transform: translateY(0);
+    }
 }
 
 .fa-facebook:hover {
