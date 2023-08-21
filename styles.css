@@ -1,3 +1,13 @@
+/*
+TODO: Redesign call to action button
+TODO: Make the white color in cards to switch to another color on hover
+TODO: Change card images
+TODO: Fix height bug when hovering over cards
+TODO: Change background color of the 'about' section
+TODO: Add a headline to the slideshow
+TODO: Change cards to more useful links like booking hotel, public transport, latest news, etc
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -135,65 +145,121 @@ h2 {
     100% {opacity: 0;}
 }
 
-.content {
+.about {
+    background: linear-gradient(to bottom, white, #e0dada);
+    height: 100vh;
+}
+
+.cards {
     display: flex;
     justify-content: center;
     gap: 5%;
     flex-direction: row;
-    height: 450px;
-    background-color: #F0EBEB;
 }
 
-.box {
+.card2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     width: 300px;
     height: 400px;
     background-color: white;
     transform: translateY(-10%);
     border-radius: 9px;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
     transition: 1s;
     z-index: 1;
     text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 
-.box:hover {
-    height: 450px;
-    width: 350px;
-    opacity: 1;
+.card2 img {
+    width: 100%;
+    height: 100%;
+    -webkit-mask-image: linear-gradient(to top, transparent 20%, black 100%);
+    transform: scale(1.5);
+
 }
 
-.box h3 {
-    padding: 10px;
+.card2:hover {
+    background-color: #AB455B;
+}
+
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)), url('images/church1.jpg');
+    background-size: 150%;
+    background-position: center;
+    transform: translateY(-10%);
+    border-radius: 9px;
+    transition: 0.3s;
+    z-index: 1;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.gradient {
+    background: linear-gradient(to top, #ffffff 20%, rgba(255, 255, 255, 0));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -25%;
+    left: 0;
+    transition: 0.5s;
+}
+
+.card:hover {
+    height: 410px;
+    width: 310px;
+    background-size: 160%;
+    filter: brightness(1.2);
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.5);
+}
+
+.card:hover .gradient {
+    bottom: 0;
+}
+
+.card-text {
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    transition: 0.5s;
+}
+
+.card h3 {
     color: #AB455B;
-    background-color: #F0EBEB;
-    border-radius: 9px 9px 0 0;
 }
 
-.box i {
+.card:hover .card-text {
+    transform: translateY(-100%);
+}
+
+.card hr {
+    border-top: #323D52 solid 1px;
+    border-bottom: #323D52 solid 1px;
+    margin: 5px auto;
+    transition: 0.5s;
+    width: 10%;
+}
+
+.card:hover hr {
+    width: 90%;
+}
+
+.card p {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0, 0);
+}
+
+.card:hover p {
+    opacity: 1;
     color: #323D52;
-    font-size: 100px;
-    margin:  50px auto;
-    transition: 2s;
-}
-
-.box p {
-    opacity: 0;
-    transition: 1s;
-    margin: 15px;
-}
-
-.box:hover p {
-    opacity: 1;
-}
-
-.box:hover i {
-    opacity: 1;
-    margin: 10px;
-}
-
-.pitch {
-    height: 500px;
-    background-color: #F0EBEB;
 }
 
 .pitch-box {
@@ -201,14 +267,13 @@ h2 {
     justify-content: space-between;
     flex-direction: row;
     border-radius: 9px;
-    background-color: white;
+    background: white;
     padding: 15px 15px 15px 30px;
     margin: 0 auto;
     gap: 15px;
     width: 70%;
     min-width: 700px;
     height: 400px;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
     text-align: left;
 }
 
