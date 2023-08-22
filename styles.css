@@ -1,11 +1,7 @@
 /*
 TODO: Redesign call to action button
-TODO: Make the white color in cards to switch to another color on hover
 TODO: Change card images
-TODO: Fix height bug when hovering over cards
-TODO: Change background color of the 'about' section
 TODO: Add a headline to the slideshow
-TODO: Change cards to more useful links like booking hotel, public transport, latest news, etc
 */
 
 * {
@@ -157,109 +153,81 @@ h2 {
     flex-direction: row;
 }
 
-.card2 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 300px;
-    height: 400px;
-    background-color: white;
-    transform: translateY(-10%);
-    border-radius: 9px;
-    transition: 1s;
-    z-index: 1;
-    text-align: center;
-    position: relative;
-    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
-    overflow: hidden;
-}
-
-.card2 img {
-    width: 100%;
-    height: 100%;
-    -webkit-mask-image: linear-gradient(to top, transparent 20%, black 100%);
-    transform: scale(1.5);
-
-}
-
-.card2:hover {
-    background-color: #AB455B;
-}
-
-
 .card {
     width: 300px;
     height: 400px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)), url('images/church1.jpg');
-    background-size: 150%;
-    background-position: center;
-    transform: translateY(-10%);
+    background-color: white;
+    transform: translateY(-5%);
     border-radius: 9px;
-    transition: 0.3s;
-    z-index: 1;
+    transition: 1s;
     text-align: center;
     position: relative;
     box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
     overflow: hidden;
 }
 
-.gradient {
-    background: linear-gradient(to top, #ffffff 20%, rgba(255, 255, 255, 0));
-    width: 100%;
+.card img {
     height: 100%;
+    width: auto;
+    -webkit-mask-image: linear-gradient(to top, transparent 20%, black 100%);
+    transform: scale(1.5);
+    transition: 2s;
+}
+
+.card:nth-child(4) img {
     position: absolute;
-    bottom: -25%;
-    left: 0;
-    transition: 0.5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.card:hover {
-    height: 410px;
-    width: 310px;
-    background-size: 160%;
-    filter: brightness(1.2);
-    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.5);
-}
-
-.card:hover .gradient {
-    bottom: 0;
-}
-
-.card-text {
+.card-txt {
     position: absolute;
     width: 100%;
     top: 90%;
     transition: 0.5s;
+    color: #323D52;
 }
 
-.card h3 {
-    color: #AB455B;
-}
-
-.card:hover .card-text {
-    transform: translateY(-100%);
-}
-
-.card hr {
-    border-top: #323D52 solid 1px;
-    border-bottom: #323D52 solid 1px;
-    margin: 5px auto;
-    transition: 0.5s;
+.card-txt hr {
     width: 10%;
+    margin: 0 auto;
+    transition: 1.5s;
 }
 
-.card:hover hr {
-    width: 90%;
-}
-
-.card p {
-    font-family: 'Courier New', Courier, monospace;
+.card-txt p {
     color: rgb(0, 0, 0, 0);
 }
 
+.card:hover {
+    background-color: #323D52;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.6);
+    transform: translateY(-10%);
+}
+
+.card:nth-child(4):hover img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.card:hover img {
+    transform: scale(1.7);
+}
+
+.card:hover .card-txt {
+    color: white;
+    transform: translateY(-60%);
+}
+
+.card:hover hr {
+    width: 80%;
+}
+
 .card:hover p {
-    opacity: 1;
-    color: #323D52;
+    color: white;
+    margin: 5px 15px;
 }
 
 .pitch-box {
