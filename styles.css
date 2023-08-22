@@ -75,10 +75,11 @@ nav a:last-child {
     border: #323D52 solid 3px;
     border-top: rgb(0, 0, 0, 0) solid 3px;
     border-bottom: rgb(0, 0, 0, 0) solid 3px;
-    padding: 5px 15px;
+    padding: 2px 15px;
     border-radius: 50px;
     background-color: rgb(207, 136, 76, 0.5);
     transition: 0.3s;
+    transform: translateY(-5px);
 }
 
 nav a:hover {
